@@ -60,3 +60,8 @@
 </body>
 
 </html>
+
+<?php
+echo "Nom : " . htmlspecialchars($nom);
+echo "Email : " . htmlspecialchars($email);
+echo "Âge : " . htmlspecialchars($age);

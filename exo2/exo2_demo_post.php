@@ -48,3 +48,12 @@
 </body>
 
 </html>
+
+
+<?php
+if (!empty($_GET['nom_get']) && !empty($_GET['email_get'])) {
+    echo "<p>GET - Bonjour " . htmlspecialchars($_GET['nom_get']) . ", votre email est " . htmlspecialchars($_GET['email_get']) . ".</p>";
+}
+if (!empty($_POST['nom_post']) && !empty($_POST['email_post'])) {
+    echo "<p>POST - Bonjour " . htmlspecialchars($_POST['nom_post']) . ", votre email est " . htmlspecialchars($_POST['email_post']) . ".</p>";
+}
